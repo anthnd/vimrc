@@ -1,3 +1,43 @@
+set nocompatible
+
+set encoding=utf-8
+syntax on
+filetype plugin indent on
+set autoindent
+set backspace=eol,indent,start
+
+set nobackup
+set undolevels=100
+set history=100
+
+set number
+set ruler
+set scrolloff=3
+set ttyfast
+
+set laststatus=2
+set cmdheight=2
+set wildmenu
+set showmode
+set showcmd
+
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+set noshiftround
+
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+set showmatch
+
+inoremap jj <Esc>
+
+colorscheme desert
+set background=dark
+
 " " Don't try to be vi compatible
 " set nocompatible
 " 
@@ -73,39 +113,3 @@
 " " Match brackets
 " set showmatch
 
-set nocompatible
-
-set encoding=utf-8
-syntax on
-filetype plugin indent on
-set autoindent
-
-set nobackup
-" set undolevels=1000
-" set history
-
-set number
-set ruler
-set scrolloff=3
-set ttyfast
-
-set laststatus=2
-set cmdheight=2
-set wildmenu
-set showmode
-set showcmd
-
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
-set expandtab
-set noshiftround
-
-set hlsearch
-set incsearch
-set ignorecase
-set smartcase
-set showmatch
-
-colorscheme desert
-set background=dark
