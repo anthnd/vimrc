@@ -5,23 +5,20 @@ set nocompatible
 syntax on
 
 " Load plugins here (pathogen or vundle)
-execute pathogen#infect()
+" execute pathogen#infect()
 
 " Syntastic recommended settings
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 0
 
 " Airline settings
-let g:airline_powerline_fonts = 1
-let g:airline#extensions#tabline#enabled = 1
-
-" Leader key
-let mapleader = ","
+ let g:airline_powerline_fonts = 1
+ let g:airline#extensions#tabline#enabled = 1
 
 " Show line numbers
 set number
@@ -54,6 +51,9 @@ set ttyfast
 " Status bar
 set laststatus=2
 
+" Command height
+set cmdheight=2
+
 " Command Tab suggestions
 set wildmenu
 
@@ -69,15 +69,6 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
-map <leader><space> :let @/=''<cr> " clear search
 
 " Match brackets
 set showmatch
-
-" Remap help key.
-inoremap <F1> <ESC>:set invfullscreen<CR>a
-nnoremap <F1> :set invfullscreen<CR>
-vnoremap <F1> :set invfullscreen<CR>
-
-" Color scheme (terminal)
-set t_Co=16
