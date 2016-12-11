@@ -6,6 +6,9 @@ filetype plugin indent on
 set autoindent
 set backspace=eol,indent,start
 
+set visualbell
+set t_vb=
+
 set nobackup
 set undolevels=100
 set history=100
